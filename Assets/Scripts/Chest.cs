@@ -14,7 +14,7 @@ namespace ArrPG
 
         public Chest()
         {
-            if (Random.Range((0,7) == 2)
+            if (Random.Range(0,7) == 2)
             {
                 Trap = true;
             }
@@ -30,7 +30,7 @@ namespace ArrPG
             {
                 int itemToAdd = Random.Range(0, ItemDatabase.Instance.Items.Count);
                 Item = ItemDatabase.Instance.Items[itemToAdd];
-                Gold = Random.Range(20, 200)
+                Gold = Random.Range(20, 200);
             }
         }
     }
