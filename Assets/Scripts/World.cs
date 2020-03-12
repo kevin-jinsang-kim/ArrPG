@@ -11,6 +11,7 @@ namespace ArrPG
         private void Awake()
         {
             Dungeon = new Room[(int)Grid.x, (int)Grid.y];
+            GenerateFloor();
         }
  
         public void GenerateFloor()
@@ -25,12 +26,10 @@ namespace ArrPG
                     };
                 }
             }            
- 
             Vector2 exitLocation = new Vector2((int)Random.Range(0, Grid.x), (int)Random.Range(0, Grid.y));
             Dungeon[(int)exitLocation.x, (int)exitLocation.y].Exit = true;
             Dungeon[(int)exitLocation.x, (int)exitLocation.y].Empty = false;
-            Debug.Log("Exit is at: " + exitLocation + " " + Time.time);
-         
+            Debug.Log("Exit is at " + exitLocation);
         }
     }
 }
