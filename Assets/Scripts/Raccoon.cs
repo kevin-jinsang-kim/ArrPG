@@ -12,6 +12,7 @@ namespace ArrPG
             Attack = 5;
             Defence = 3;
             Gold = 20;
+            Description = "A rabid racoon";
             Inventory.Add("Mouldy Eyepatch");
         }
     }

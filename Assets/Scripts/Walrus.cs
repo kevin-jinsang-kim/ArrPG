@@ -12,6 +12,7 @@ namespace ArrPG
             Attack = 3;
             Defence = 5;
             Gold = 30;
+            Description = "Severely manic walrus";
             Inventory.Add("Decaying Tusk");
         }
     }
